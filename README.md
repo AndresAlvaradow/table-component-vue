@@ -1,4 +1,4 @@
-# table-component-vue
+# table-component-vue with quasar
 
 #data structure
 ```
