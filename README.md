@@ -66,3 +66,22 @@ const table = reactive({
     loading: false,
 });
 ```
+# Llamado
+```
+  <TableComponenGeneral
+title="Usuarios"
+@request="onRequest"
+:loading="loading"
+:perPageOptions="perPageOptions"
+:editfuction="(data) => showFormUserModal(data)"
+:editStateFuction="(data) => showConfirmModal(data)"
+rowsPerLabel="Filas por página:"
+:loadPagination="loading"
+:dataTable="table"
+toolTipsSearch="Nombre, Cédula"
+:handleRowDblClick="(evt, data) => openModalDetail(evt, data)"
+:dataOption="dataAccionOpcion"
+:filterCheckColumns="false"
+:filterColumns="true"
+/>
+```
